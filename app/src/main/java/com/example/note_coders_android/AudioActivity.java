@@ -166,7 +166,7 @@ public class AudioActivity extends AppCompatActivity
                     }
                     else
                         {
-                        Toast.makeText(com.example.note_coders_android.AudioActivity.this,"Permission Denied", Toast.LENGTH_LONG).show();
+                       // Toast.makeText(com.example.note_coders_android.AudioActivity.this,"Permission Denied", Toast.LENGTH_LONG).show();
                     }
                 }
                 break;
