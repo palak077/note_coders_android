@@ -17,10 +17,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+//adapter for the recycler view
 public class Adapter extends RecyclerView.Adapter<com.example.note_coders_android.Adapter.MyViewHolder> implements Filterable {
 
     Context context;
     Activity activity;
+    //create a list of model type named list
     List<Model> notesList;
     List<Model> newList;
 
@@ -31,20 +33,25 @@ public class Adapter extends RecyclerView.Adapter<com.example.note_coders_androi
         newList = new ArrayList<>(notesList);
     }
 
+    //implement method 1
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    {
+        //create a view and return it
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_view_layout, parent, false);
         return new MyViewHolder(view);
     }
-
+    //implement method 2
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position)
+    {
+        //get title and description from note list and bind here
         holder.title.setText(notesList.get(position).getTitle());
         holder.description.setText(notesList.get(position).getDescription());
 
-        holder.layout.setOnClickListener(new View.OnClickListener() {
+        holder.layout.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, UpdateNotesActivity.class);
@@ -58,8 +65,11 @@ public class Adapter extends RecyclerView.Adapter<com.example.note_coders_androi
         });
     }
 
+    //implement method 3
     @Override
-    public int getItemCount() {
+    public int getItemCount()
+    {
+        //return the number of elements in the list
         return notesList.size();
     }
 
@@ -68,7 +78,8 @@ public class Adapter extends RecyclerView.Adapter<com.example.note_coders_androi
         return exampleFilter;
     }
 
-    private Filter exampleFilter = new Filter() {
+    private Filter exampleFilter = new Filter()
+    {
         @Override
         protected FilterResults performFiltering(CharSequence constraint)
         {
@@ -99,13 +110,17 @@ public class Adapter extends RecyclerView.Adapter<com.example.note_coders_androi
         }
     };
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    //constructor for the same
+    public class MyViewHolder extends RecyclerView.ViewHolder
+    {
+        //create two text views and relative layout that holds them
         TextView title, description;
         RelativeLayout layout;
 
-        public MyViewHolder(@NonNull View itemView) {
+        //create reference to them
+        public MyViewHolder(@NonNull View itemView)
+        {
             super(itemView);
-
             title = itemView.findViewById(R.id.title);
             description = itemView.findViewById(R.id.description);
             layout = itemView.findViewById(R.id.note_layout);

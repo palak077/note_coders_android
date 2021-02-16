@@ -14,21 +14,24 @@ public class AddNotesActivity extends AppCompatActivity {
 
     EditText title, description;
     Button addNote;
+    Button audio_button;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_notes);
 
         title = findViewById(R.id.title);
         description = findViewById(R.id.description);
         addNote = findViewById(R.id.addNote);
+        audio_button = findViewById(R.id.audioAddButton);
 
-        addNote.setOnClickListener(new View.OnClickListener() {
+        addNote.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-
-
+            public void onClick(View v)
+            {
                 if (!TextUtils.isEmpty(title.getText().toString()) && !TextUtils.isEmpty(description.getText().toString()))
                 {
 //                    DatabaseClass db = new DatabaseClass(com.example.note_coders_android.AddNotesActivity.this);
@@ -46,6 +49,11 @@ public class AddNotesActivity extends AppCompatActivity {
 
             }
         });
-
+        audio_button.setOnClickListener(v ->
+        {
+            //to go to add notes activity
+            Intent intent = new Intent(AddNotesActivity.this, AudioActivity.class);
+            startActivity(intent);
+        });
     }
 }
