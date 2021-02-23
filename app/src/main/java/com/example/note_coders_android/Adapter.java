@@ -73,34 +73,34 @@ public class Adapter extends RecyclerView.Adapter<com.example.note_coders_androi
         return notesList.size();
     }
 
-    @Override
-    public Filter getFilter() {
-        return exampleFilter;
-    }
+//    @Override
+//    public Filter getFilter() {
+//        return exampleFilter;
+//    }
 
-    private Filter exampleFilter = new Filter()
-    {
-        @Override
-        protected FilterResults performFiltering(CharSequence constraint)
-        {
-            List<Model> filteredList = new ArrayList<>();
-
-            if (constraint == null || constraint.length() == 0) {
-                filteredList.addAll(newList);
-            } else {
-                String filterPattern = constraint.toString().toLowerCase().trim();
-
-                for (Model item : newList) {
-                    if (item.getTitle().toLowerCase().contains(filterPattern)) {
-                        filteredList.add(item);
-                    }
-                }
-
-            }
-            FilterResults results = new FilterResults();
-            results.values = filteredList;
-            return results;
-        }
+//    private Filter exampleFilter = new Filter()
+//    {
+//        @Override
+//        protected FilterResults performFiltering(CharSequence constraint)
+//        {
+//            List<Model> filteredList = new ArrayList<>();
+//
+//            if (constraint == null || constraint.length() == 0) {
+//                filteredList.addAll(newList);
+//            } else {
+//                String filterPattern = constraint.toString().toLowerCase().trim();
+//
+//                for (Model item : newList) {
+//                    if (item.getTitle().toLowerCase().contains(filterPattern)) {
+//                        filteredList.add(item);
+//                    }
+//                }
+//
+//            }
+//            FilterResults results = new FilterResults();
+//            results.values = filteredList;
+//            return results;
+//        }
 
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {

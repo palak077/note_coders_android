@@ -42,16 +42,15 @@ public class AddNotesActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
 
-                } else {
+                } else
+                    {
                     Toast.makeText(com.example.note_coders_android.AddNotesActivity.this, "Both Fields Required", Toast.LENGTH_SHORT).show();
                 }
-
-
             }
         });
         audio_button.setOnClickListener(v ->
         {
-            //to go to add notes activity
+            //to go to audio activity
             Intent intent = new Intent(AddNotesActivity.this, AudioActivity.class);
             startActivity(intent);
         });
