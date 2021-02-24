@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="note.coders.android.ui.fragments.AddOrEditNoteFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_baseline_category_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/blue"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="@string/no_category"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/location_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/blue"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="@string/location"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <ImageButton
+        android:id="@+id/location"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_location"
+        android:tint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/play_audio_btn"
+        app:layout_constraintEnd_toStartOf="@+id/play_audio_btn"
+        app:layout_constraintTop_toTopOf="@+id/play_audio_btn" />
+
+    <ImageButton
+        android:id="@+id/play_audio_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_play"
+        android:tint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/title"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_text" />
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/edit_text_title"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/write_your_note_here"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/image_view_optional_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_title" />
+
+    <ImageView
+        android:id="@+id/image_view_optional_photo"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
