@@ -16,28 +16,16 @@
         android:layout_height="wrap_content"
         android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/image_view_optional_photo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/text_view_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:gravity="center"
             android:maxLines="1"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/image_view_optional_photo"
-            app:layout_constraintStart_toStartOf="@+id/image_view_optional_photo"
-            app:layout_constraintTop_toBottomOf="@+id/image_view_optional_photo"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="166dp"
             tools:text="Title" />
 
         <TextView
