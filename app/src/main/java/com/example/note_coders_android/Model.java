@@ -7,7 +7,6 @@ public class Model
         String description;
         String id;
 
-    //construtor for the same
     public Model(String id, String title, String description)
     {
         this.title = title;
