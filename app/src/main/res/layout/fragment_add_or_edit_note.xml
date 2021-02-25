@@ -46,31 +46,14 @@
         android:id="@+id/location"
         android:layout_width="32dp"
         android:layout_height="32dp"
-        android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
         android:padding="4dp"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_location"
         android:tint="@color/blue"
-        app:layout_constraintBottom_toBottomOf="@+id/play_audio_btn"
-        app:layout_constraintEnd_toStartOf="@+id/play_audio_btn"
-        app:layout_constraintTop_toTopOf="@+id/play_audio_btn" />
-
-    <ImageButton
-        android:id="@+id/play_audio_btn"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        android:padding="4dp"
-        android:scaleType="fitCenter"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_play"
-        android:tint="@color/blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <EditText
         android:id="@+id/edit_text_title"
