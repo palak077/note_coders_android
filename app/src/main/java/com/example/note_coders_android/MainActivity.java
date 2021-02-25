@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity
     FloatingActionButton fab;
     com.example.note_coders_android.Adapter adapter;
     //List<com.example.note_coders_android.Model> notesList;
-    //DatabaseClass databaseClass;
     CoordinatorLayout coordinatorLayout;
 
 
