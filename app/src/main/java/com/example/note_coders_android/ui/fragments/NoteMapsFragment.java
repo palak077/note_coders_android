@@ -36,7 +36,8 @@ public class NoteMapsFragment extends BaseFragment<FragmentNoteMapsBinding, Note
         public void onMapReady(GoogleMap googleMap) {
             mGoogleMap = googleMap;
 
-            if (getArguments() != null) {
+            if (getArguments() != null)
+            {
                 /// Getting Arguments of Edit Note .. Here we are getting those selected Note lat and long
                 mGoogleMap.clear();
                 double latitude = getArguments().getDouble("latitude");
@@ -44,14 +45,25 @@ public class NoteMapsFragment extends BaseFragment<FragmentNoteMapsBinding, Note
 
                 addMarker(latitude, longitude, true);
 
-            } else {
+//                MarkerOptions markerOptions = new MarkerOptions();
+//                markerOptions.position(currentLocation.getCoordinate());
+//                markerOptions.title(Utils.getLocationString(currentLocation.getCoordinate()));
+//                markerOptions.snippet("Blah");
+//
+//                locationMarker = map.addMarker(markerOptions);
+
+            } else
+                {
                 /// OBSERVING Notes to add every marker of Locations
                 viewModel.getAllNotes().observe(getViewLifecycleOwner(), notes -> {
                     mGoogleMap.clear();
-                    for (Note note : notes) {
+                    for (Note note : notes)
+                    {
                         Location location = note.getLocation();
-                        if (location != null) {
+                        if (location != null)
+                        {
                             addMarker(location.getLatitude(), location.getLongitude(), true);
+
                         }
                     }
                 });

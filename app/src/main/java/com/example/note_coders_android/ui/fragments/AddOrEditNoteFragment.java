@@ -313,7 +313,8 @@ public class AddOrEditNoteFragment extends BaseFragment<FragmentAddOrEditNoteBin
                 if (oldLocation == null) {
                     if (currentLocation == null) {
                         Toast.makeText(requireContext(), "Please add a location first!", Toast.LENGTH_SHORT).show();
-                    } else {
+                    } else
+                        {
                         navigateToMap(currentLocation);
                     }
                 } else {
