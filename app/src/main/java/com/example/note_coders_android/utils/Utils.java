@@ -42,13 +42,13 @@ public class Utils {
     public static void showAlertDialog(Context context, String title, String subTitle, AlertDialogCallback listener) {
         Resources resources = context.getResources();
 
-//        new MaterialAlertDialogBuilder(context)
-//                .setTitle(title)
-//                .setMessage(subTitle)
-//                .setCancelable(true)
-//                .setNegativeButton(resources.getString(R.string.cancel), (dialog, which) -> listener.onNegativeButtonClick(dialog))
-//                .setPositiveButton(resources.getString(R.string.exit), (dialog, which) -> listener.onPositiveButtonClick())
-//                .show();
+        new MaterialAlertDialogBuilder(context)
+                .setTitle(title)
+                .setMessage(subTitle)
+                .setCancelable(true)
+                .setNegativeButton(resources.getString(R.string.cancel), (dialog, which) -> listener.onNegativeButtonClick(dialog))
+                .setPositiveButton(resources.getString(R.string.exit), (dialog, which) -> listener.onPositiveButtonClick())
+                .show();
     }
 
 }
