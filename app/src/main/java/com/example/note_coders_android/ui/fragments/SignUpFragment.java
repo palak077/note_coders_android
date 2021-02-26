@@ -108,17 +108,18 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, UserView
                     /// TODO: Saving "true" that user is currently logged in
 
 
-                    requireActivity().runOnUiThread(() -> {
-                        NavOptions navOptions = new NavOptions.Builder()
-                                .setEnterAnim(R.anim.slide_in_right)
-                                .setExitAnim(R.anim.slide_out_left)
-                                .setPopEnterAnim(R.anim.slide_in_left)
-                                .setPopExitAnim(R.anim.slide_out_right)
-                                .setPopUpTo(R.id.signUpFragment, true)
-                                .build();
-
-                        navController.navigate(R.id.action_global_homeFragment, null, navOptions);
-                    });
+//                    requireActivity().runOnUiThread(() ->
+//                    {
+//                        NavOptions navOptions = new NavOptions.Builder()
+//                                .setEnterAnim(R.anim.slide_in_right)
+//                                .setExitAnim(R.anim.slide_out_left)
+//                                .setPopEnterAnim(R.anim.slide_in_left)
+//                                .setPopExitAnim(R.anim.slide_out_right)
+//                                .setPopUpTo(R.id.signUpFragment, true)
+//                                .build();
+//
+//                        navController.navigate(R.id.action_global_homeFragment, null, navOptions);
+//                    });
 
                 });
 
