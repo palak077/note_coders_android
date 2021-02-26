@@ -15,7 +15,8 @@ import com.example.note_coders_android.data.entities.Note;
 import com.example.note_coders_android.data.repository.CategoryRepository;
 import com.example.note_coders_android.data.repository.NoteRepository;
 
-public class NoteViewModel extends AndroidViewModel {
+public class NoteViewModel extends AndroidViewModel
+{
     /// ViewModel for observing data and realtime update to UI
 
     private NoteRepository repository;
@@ -26,7 +27,8 @@ public class NoteViewModel extends AndroidViewModel {
     private LiveData<List<Category>> allCategories;
 
 
-    public NoteViewModel(@NonNull Application application) {
+    public NoteViewModel(@NonNull Application application)
+    {
         super(application);
         repository = new NoteRepository(application);
         categoryRepository = new CategoryRepository(application);
@@ -34,18 +36,21 @@ public class NoteViewModel extends AndroidViewModel {
         allCategories = categoryRepository.getAllCategories();
     }
 
-    public void insert(Note note) {
+    public void insert(Note note)
+    {
         repository.insert(note);
     }
 
-    public void update(Note note) {
+    public void update(Note note)
+    {
         repository.update(note);
     }
 
-    public void delete(Note note) {
-        Log.d("AYAN", "Note list " + allNotes.getValue().size());
+    public void delete(Note note)
+    {
+        Log.d("Palak", "Note list " + allNotes.getValue().size());
         repository.delete(note);
-        Log.d("AYAN", "Note list " + allNotes.getValue().size());
+        Log.d("Chetna", "Note list " + allNotes.getValue().size());
     }
 
     public LiveData<List<Note>> getAllNotes() {
