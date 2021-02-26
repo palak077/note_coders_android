@@ -35,6 +35,7 @@
         <SearchView
             android:id="@+id/search_view_toolbar"
             android:layout_width="match_parent"
+            android:queryHint="Search notes here"
             android:layout_height="wrap_content"
             android:iconifiedByDefault="true"
             android:layoutDirection="rtl" />

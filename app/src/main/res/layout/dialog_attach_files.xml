@@ -23,6 +23,41 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pick_audio"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_library_music_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/blue"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/audio_library"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_audio" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/take_a_photo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_baseline_camera_alt_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/blue"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/take_a_photo"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_audio" />
+
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/photo_library"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -38,7 +73,8 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/record_audio" />
+        app:layout_constraintTop_toBottomOf="@+id/take_a_photo" />
+
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/get_location"
@@ -58,42 +94,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/photo_library" />
-
-<!--    <com.google.android.material.textview.MaterialTextView-->
-<!--        android:id="@+id/take_a_photo"-->
-<!--        android:layout_width="300dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:drawableStart="@drawable/ic_baseline_camera_alt_24"-->
-<!--        android:drawablePadding="16dp"-->
-<!--        android:drawableTint="@color/blue"-->
-<!--        android:gravity="center_vertical"-->
-<!--        android:paddingTop="8dp"-->
-<!--        android:paddingBottom="8dp"-->
-<!--        android:text="@string/take_a_photo"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="18sp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/photo_library" />-->
-
-<!--    <com.google.android.material.textview.MaterialTextView-->
-<!--        android:id="@+id/get_location"-->
-<!--        android:layout_width="300dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:drawableStart="@drawable/ic_location"-->
-<!--        android:drawablePadding="16dp"-->
-<!--        android:drawableTint="@color/blue"-->
-<!--        android:gravity="center_vertical"-->
-<!--        android:paddingTop="8dp"-->
-<!--        android:paddingBottom="8dp"-->
-<!--        android:text="@string/get_location"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="18sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/take_a_photo" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

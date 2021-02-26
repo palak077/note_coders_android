@@ -29,7 +29,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:visibility="gone"
         android:layout_marginEnd="16dp"
         android:drawableStart="@drawable/ic_location"
         android:drawablePadding="8dp"
@@ -38,6 +37,7 @@
         android:padding="8dp"
         android:text="@string/location"
         android:textSize="16sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/category" />
@@ -62,11 +62,11 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
         android:padding="4dp"
         android:scaleType="fitCenter"
-        android:layout_marginEnd="16dp"
         android:src="@drawable/ic_play"
         android:tint="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,19 +83,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/location_text" />
 
-    <ImageView
-        android:id="@+id/image_view_optional_photo"
+    <EditText
+        android:id="@+id/edit_text_description"
         android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/edit_text_title"
         android:layout_marginBottom="16dp"
-        android:scaleType="fitCenter"
-        android:visibility="gone"
-        android:contentDescription="@string/app_name"
+        android:hint="@string/write_your_note_here"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:listitem="@layout/item_images" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

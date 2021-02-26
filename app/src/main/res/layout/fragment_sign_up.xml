@@ -49,7 +49,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:startIconDrawable="@drawable/ic_email"/>
+            app:startIconDrawable="@drawable/ic_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:textColor="@color/primaryColor"
+                tools:text="ash dip" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email_et"
@@ -76,20 +85,47 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_et"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/password"
+            app:errorContentDescription="@string/invalid_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_et"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/primaryColor"
+            app:startIconDrawable="@drawable/ic_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:textColor="@color/primaryColor"
+                tools:text="@string/password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/confirm_password_et"
             style="@style/EditTextStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:hint="@string/confirm_password"
             app:errorContentDescription="@string/password_doesnt_match"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_et"
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="@color/primaryColor"
-            app:startIconDrawable="@drawable/ic_password"
-            tools:layout_editor_absoluteY="243dp">
+            app:startIconDrawable="@drawable/ic_password">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -113,10 +149,8 @@
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/confirm_password_et"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/confirm_password_et" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
