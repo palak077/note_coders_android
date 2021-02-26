@@ -37,17 +37,17 @@ public class SplashFragment extends BaseFragment<FragmentSplashBinding, NoteView
     @Override
     public void onResume() {
         super.onResume();
-//        NavOptions navOptions = new NavOptions.Builder()
-//                .setEnterAnim(R.anim.slide_in_right)
-//                .setExitAnim(R.anim.slide_out_left)
-//                .setPopEnterAnim(R.anim.slide_in_left)
-//                .setPopExitAnim(R.anim.slide_out_right)
-//                .setPopUpTo(R.id.splashFragment, true)
-//                .build();
-//
-//        ///// CHECKING HERE USER LOGIN OR NOT
-//        SharedPreferences sharedPref = requireActivity().getSharedPreferences("app", Context.MODE_PRIVATE);
-//        boolean loginUser = sharedPref.getBoolean("login_user", false);
+        NavOptions navOptions = new NavOptions.Builder()
+                .setEnterAnim(R.anim.slide_in_right)
+                .setExitAnim(R.anim.slide_out_left)
+                .setPopEnterAnim(R.anim.slide_in_left)
+                .setPopExitAnim(R.anim.slide_out_right)
+                .setPopUpTo(R.id.splashFragment, true)
+                .build();
+
+        ///// CHECKING HERE USER LOGIN OR NOT
+        SharedPreferences sharedPref = requireActivity().getSharedPreferences("app", Context.MODE_PRIVATE);
+        boolean loginUser = sharedPref.getBoolean("login_user", false);
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             if (loginUser) {
