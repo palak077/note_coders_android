@@ -37,16 +37,19 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, UserView
     }
 
     @Override
-    public void setupClickListeners() {
+    public void setupClickListeners()
+    {
         binding.signUpBtn.setOnClickListener(v -> checkEmailAndPassword());
     }
 
-    private void showError(TextInputLayout editText, String value) {
+    private void showError(TextInputLayout editText, String value)
+    {
         editText.setErrorEnabled(true);
         editText.setError(String.format(getString(R.string.cannot_be_empty), value));
     }
 
-    private void checkEmailAndPassword() {
+    private void checkEmailAndPassword()
+    {
         if (TextUtils.isEmpty(binding.nameEt.getEditText().getText().toString().trim())) {
             showError(binding.nameEt, getString(R.string.name));
             return;
@@ -86,14 +89,14 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, UserView
             if (binding.passwordEt.getEditText().getText().toString().equals(binding.confirmPasswordEt.getEditText().getText().toString())) {
                 binding.confirmPasswordEt.setErrorEnabled(false);
 
-                Executor executor = Executors.newSingleThreadExecutor();
-
-                executor.execute(() -> {
-                    User user = new User();
-                    user.setName(binding.nameEt.getEditText().getText().toString().trim());
-                    user.setEmail(binding.emailEt.getEditText().getText().toString().trim());
-                    user.setPassword(binding.passwordEt.getEditText().getText().toString().trim());
-                    viewModel.signUp(user);
+//                Executor executor = Executors.newSingleThreadExecutor();
+//
+//                executor.execute(() -> {
+//                    User user = new User();
+//                    user.setName(binding.nameEt.getEditText().getText().toString().trim());
+//                    user.setEmail(binding.emailEt.getEditText().getText().toString().trim());
+//                    user.setPassword(binding.passwordEt.getEditText().getText().toString().trim());
+//                    viewModel.signUp(user);
 //                    /// TODO: Sign Up Process here:: Inserting user data in Room Database
 //
 //                    User user1 = viewModel.findByEmail(binding.emailEt.getEditText().getText().toString().trim());
