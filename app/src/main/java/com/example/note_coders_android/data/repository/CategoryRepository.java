@@ -18,7 +18,8 @@ public class CategoryRepository {
     private LiveData<List<Category>> allCategories;
     private Executor executor;
 
-    public CategoryRepository(Application application) {
+    public CategoryRepository(Application application)
+    {
         NoteDatabase database = NoteDatabase.getInstance(application);
         categoryDao = database.categoryDao();
         allCategories = categoryDao.getAllCategories();

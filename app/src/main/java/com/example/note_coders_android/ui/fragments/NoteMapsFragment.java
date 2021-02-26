@@ -93,13 +93,15 @@ public class NoteMapsFragment extends BaseFragment<FragmentNoteMapsBinding, Note
     public void setupClickListeners() {
     }
 
-    private void addMarker(double latitudeValue, double longitudeValue, boolean moveCamera) {
+    private void addMarker(double latitudeValue, double longitudeValue, boolean moveCamera)
+    {
         LatLng userNote = new LatLng(latitudeValue, longitudeValue);
         String address = getCurrentLocationName(latitudeValue, longitudeValue);
 
         /// TODO: Adding Marker in MAP here by Latitude and Longitude
         mGoogleMap.addMarker(new MarkerOptions().position(userNote).title(address));
-        if (moveCamera) {
+        if (moveCamera)
+        {
             mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(userNote));
         }
     }
@@ -114,7 +116,8 @@ public class NoteMapsFragment extends BaseFragment<FragmentNoteMapsBinding, Note
             Log.d("main", Objects.requireNonNull(e.getMessage()));
         }
 
-        if (geocoder != null) {
+        if (geocoder != null)
+        {
             List<Address> addresses;
             try {
                 addresses = geocoder.getFromLocation(latitudeValue, longitudeValue, 1);
@@ -124,8 +127,8 @@ public class NoteMapsFragment extends BaseFragment<FragmentNoteMapsBinding, Note
                     addressesLine.add(addresses.get(0).getAddressLine(i));
                 }
 
-                address = TextUtils.join(Objects.requireNonNull(System.getProperty("line.separator")), addressesLine);
-                return address;
+//                address = TextUtils.join(Objects.requireNonNull(System.getProperty("line.separator")), addressesLine);
+//                return address;
 
             } catch (IOException e) {
                 e.printStackTrace();

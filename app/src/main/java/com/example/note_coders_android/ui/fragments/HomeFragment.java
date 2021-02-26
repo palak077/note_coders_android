@@ -44,12 +44,14 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, NoteViewMode
     }
 
     @Override
-    public Class<NoteViewModel> getViewModel() {
+    public Class<NoteViewModel> getViewModel()
+    {
         return NoteViewModel.class;
     }
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
     }
@@ -61,8 +63,10 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, NoteViewMode
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item)
+    {
+        switch (item.getItemId())
+        {
             case R.id.sort_a_to_z:
                 categoryAdapter.enableAtoZSorting();
                 break;
@@ -90,19 +94,23 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, NoteViewMode
     }
 
     @Override
-    public void setupTheme() {
+    public void setupTheme()
+    {
         /// TODO:: REQUESTING PERMISSIONS FIRST
-        if (!checkAllPermissions()) {
+        if (!checkAllPermissions())
+        {
             requireActivity().requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_CODE_LOCATION);
         }
         initRecyclerView();
 
         /// TODO:: OBSERVING ALL CATEGORIES
-        viewModel.getAllCategories().observe(getViewLifecycleOwner(), categories -> {
+        viewModel.getAllCategories().observe(getViewLifecycleOwner(), categories ->
+        {
             ArrayList<String> noteCategories = new ArrayList<>();
 
             /// TODO:: ADDING TITLES OF CATEGORIES HERE
-            for (int i = 0; i < categories.size(); i++) {
+            for (int i = 0; i < categories.size(); i++)
+            {
                 String title = categories.get(i).getTitle();
                 noteCategories.add(title);
             }
@@ -110,8 +118,9 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, NoteViewMode
             categoryAdapter.updateList(noteCategories);
 
             /// TODO:: OBSERVING ALL NOTES HERE
-            viewModel.getAllNotes().observe(getViewLifecycleOwner(), notes -> {
-                Log.d("AYAN", "1. Note list " + notes.size());
+            viewModel.getAllNotes().observe(getViewLifecycleOwner(), notes ->
+            {
+                Log.d("Palak", "1. Note list " + notes.size());
                 categoryAdapter.updateNotesList(notes);
             });
         });
@@ -120,9 +129,11 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, NoteViewMode
     }
 
     @Override
-    public void setupClickListeners() {
+    public void setupClickListeners()
+    {
         binding.addNote.setOnClickListener(v -> {
             /// TODO:: passing data of "type" here that WE WANT TO ADD A NEW NOTE
+
             Bundle bundle = new Bundle();
             bundle.putInt("type", ADD_NOTE_REQUEST);
             navController.navigate(R.id.action_navigation_all_notes_to_addOrEditNoteFragment, bundle);
@@ -137,7 +148,8 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, NoteViewMode
         binding.recyclerView.setAdapter(categoryAdapter);
     }
 
-    private boolean checkAllPermissions() {
+    private boolean checkAllPermissions()
+    {
         if (!Utils.hasPermissions(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION)) {
             return false;
         }
