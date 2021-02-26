@@ -8,12 +8,14 @@ import androidx.lifecycle.AndroidViewModel;
 import com.example.note_coders_android.data.entities.User;
 import com.example.note_coders_android.data.repository.UserRepository;
 
-public class UserViewModel extends AndroidViewModel {
+public class UserViewModel extends AndroidViewModel
+{
     /// ViewModel for observing data and realtime update to UI
 
     private UserRepository repository;
 
-    public UserViewModel(@NonNull Application application) {
+    public UserViewModel(@NonNull Application application)
+    {
         super(application);
         repository = new UserRepository(application);
     }
