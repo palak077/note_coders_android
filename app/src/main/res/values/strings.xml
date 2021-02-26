@@ -1,8 +1,74 @@
 <resources>
     <string name="app_name">note_coders_android</string>
-    <string name="category">Category</string>
-    <string name="add_note">Add Note</string>
-    <string name="title">Title</string>
-    <string name="description">Description</string>
+
+    /// Title
+    <string name="all_notes">All Notes</string>
+    <string name="notes_on_map">Notes on Map</string>
+    <string name="recordings">Recordings</string>
+
+    /// Login
+    <string name="login_to_account">Login to account</string>
+    <string name="login">Login</string>
+    <string name="login_now">Login Now</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="email">Email</string>
+    <string name="cannot_be_empty" formatted="false">%1$s cannot be empty!</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="password_doesnt_match">Password doesn\'t match</string>
+
+    /// Sign Up
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_acc">I already have an account.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    /// Alert Dialog
+    <string name="exit_app">Exit the app?</string>
+    <string name="exit_app_body">Are you sure you want to exit the app?</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+    <string name="record_audio">Record Audio</string>
+    <string name="audio_library">Audio Library</string>
+
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="save">Save</string>
+    <string name="add_category">Add category</string>
+
+
+    <string name="note_not_created">Note is not yet created!</string>
+    <string name="note_not_updated">Note cannot be updated!</string>
+    <string name="note_saved">Note has been saved!</string>
+    <string name="note_updated">Note has been updated!</string>
+    <string name="note_cancelled">Note has been cancelled!</string>
+    <string name="edit_note">Edit note</string>
+    <string name="add_note">Add note</string>
+    <string name="note_deleted">Note has been deleted!</string>
+    <string name="note_cannot_be_empty">Note cannot be empty!</string>
+    <string name="location_not_enabled">Your locations setting is not enabled. Please enable it in settings menu. Otherwise You won\'t be able to read your note\'s location.</string>
+    <string name="enable_location_title">Enable Location</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="sort_a_to_z">Sort A to Z</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sort_by_date">Sort by date</string>
+    <string name="attach_file">Attach File</string>
+    <string name="share">Share</string>
+    <string name="get_location">Get Location</string>
+    <string name="take_a_photo">Take a Photo</string>
+    <string name="photo_library">Photo Library</string>
+    <string name="add">Add</string>
+    <string name="add_a_new_category">Add a new category</string>
+    <string name="select">Select</string>
+    <string name="add_new_category">Add new category</string>
+    <string name="write_your_note_here">Write your note here…</string>
+    <string name="title">Title…</string>
+    <string name="no_category">No Category</string>
     <string name="location">Location</string>
+
 </resources>

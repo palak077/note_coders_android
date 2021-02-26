@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="primaryColor">@color/blue</color>
+    <color name="topBarColor">#162864</color>
+    <color name="cellBgColor">#325ed6</color>
+    <color name="cellBgColor_35">#59325ED6</color>
+    <color name="black_35">#59000000</color>
+    <color name="darkBlue">#142052</color>
+    <color name="orange">#FF9801</color>
+    <color name="blue">#0080FF</color>
+    <color name="blue_50">#800080FF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="light_grey">#ECECEC</color>
+    <color name="darkGrey">#838383</color>
+    <color name="green">#13BA1B</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FDD835</color>
+    <color name="recyclerViewBackground">#C5C5C5</color>
+    <color name="mainActivityBgColor">#F4F4F4</color>
+    <color name="editTextBgColor">#F1F1F1</color>
 </resources>
