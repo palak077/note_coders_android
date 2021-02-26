@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 
 import androidx.navigation.NavOptions;
 
-import note.coders.android.R;
-import note.coders.android.databinding.FragmentSplashBinding;
-import note.coders.android.ui.base.BaseFragment;
-import note.coders.android.ui.viewModels.NoteViewModel;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.databinding.FragmentSplashBinding;
+import com.example.note_coders_android.ui.base.BaseFragment;
+import com.example.note_coders_android.ui.viewModels.NoteViewModel;
 
 public class SplashFragment extends BaseFragment<FragmentSplashBinding, NoteViewModel> {
 

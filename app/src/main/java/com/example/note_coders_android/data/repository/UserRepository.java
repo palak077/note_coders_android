@@ -5,9 +5,9 @@ import android.app.Application;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-import note.coders.android.data.daos.UserDao;
-import note.coders.android.data.db.NoteDatabase;
-import note.coders.android.data.entities.User;
+import com.example.note_coders_android.data.daos.UserDao;
+import com.example.note_coders_android.data.db.NoteDatabase;
+import com.example.note_coders_android.data.entities.User;
 
 public class UserRepository {
 

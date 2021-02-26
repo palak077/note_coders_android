@@ -7,7 +7,7 @@ import androidx.room.Query;
 
 import java.util.List;
 
-import note.coders.android.data.entities.User;
+import com.example.note_coders_android.data.entities.User;
 
 @Dao
 public interface UserDao {

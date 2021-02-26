@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-import note.coders.android.data.daos.CategoryDao;
-import note.coders.android.data.db.NoteDatabase;
-import note.coders.android.data.entities.Category;
+import com.example.note_coders_android.data.daos.CategoryDao;
+import com.example.note_coders_android.data.db.NoteDatabase;
+import com.example.note_coders_android.data.entities.Category;
 
 public class CategoryRepository {
 

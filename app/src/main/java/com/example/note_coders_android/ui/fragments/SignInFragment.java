@@ -14,12 +14,12 @@ import com.google.android.material.textfield.TextInputLayout;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-import note.coders.android.R;
-import note.coders.android.data.entities.User;
-import note.coders.android.databinding.FragmentSignInBinding;
-import note.coders.android.ui.base.BaseFragment;
-import note.coders.android.ui.viewModels.UserViewModel;
-import note.coders.android.utils.Utils;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.data.entities.User;
+import com.example.note_coders_android.databinding.FragmentSignInBinding;
+import com.example.note_coders_android.ui.base.BaseFragment;
+import com.example.note_coders_android.ui.viewModels.UserViewModel;
+import com.example.note_coders_android.utils.Utils;
 
 public class SignInFragment extends BaseFragment<FragmentSignInBinding, UserViewModel> {
 

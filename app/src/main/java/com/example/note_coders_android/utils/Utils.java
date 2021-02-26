@@ -14,8 +14,8 @@ import androidx.viewbinding.ViewBinding;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
-import note.coders.android.R;
-import note.coders.android.ui.interfaces.AlertDialogCallback;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.ui.interfaces.AlertDialogCallback;
 
 public class Utils {
 

@@ -51,21 +51,21 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.UUID;
 
-import note.coders.android.R;
-import note.coders.android.data.entities.Category;
-import note.coders.android.data.entities.Note;
-import note.coders.android.databinding.DialogAddNewCategoryBinding;
-import note.coders.android.databinding.DialogAttachFilesBinding;
-import note.coders.android.databinding.DialogCategorySelectionBinding;
-import note.coders.android.databinding.DialogLoadingProgressBinding;
-import note.coders.android.databinding.DialogRecordAudioBinding;
-import note.coders.android.databinding.FragmentAddOrEditNoteBinding;
-import note.coders.android.ui.activities.MainActivity;
-import note.coders.android.ui.adapters.ImagesAdapter;
-import note.coders.android.ui.base.BaseFragment;
-import note.coders.android.ui.interfaces.ImagesInterface;
-import note.coders.android.ui.viewModels.NoteViewModel;
-import note.coders.android.utils.Utils;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.data.entities.Category;
+import com.example.note_coders_android.data.entities.Note;
+import com.example.note_coders_android.databinding.DialogAddNewCategoryBinding;
+import com.example.note_coders_android.databinding.DialogAttachFilesBinding;
+import com.example.note_coders_android.databinding.DialogCategorySelectionBinding;
+import com.example.note_coders_android.databinding.DialogLoadingProgressBinding;
+import com.example.note_coders_android.databinding.DialogRecordAudioBinding;
+import com.example.note_coders_android.databinding.FragmentAddOrEditNoteBinding;
+import com.example.note_coders_android.ui.activities.MainActivity;
+import com.example.note_coders_android.ui.adapters.ImagesAdapter;
+import com.example.note_coders_android.ui.base.BaseFragment;
+import com.example.note_coders_android.ui.interfaces.ImagesInterface;
+import com.example.note_coders_android.ui.viewModels.NoteViewModel;
+import com.example.note_coders_android.utils.Utils;
 
 import static android.app.Activity.RESULT_OK;
 

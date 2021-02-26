@@ -13,9 +13,9 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import java.util.ArrayList;
 import java.util.List;
 
-import note.coders.android.R;
-import note.coders.android.databinding.ItemImagesBinding;
-import note.coders.android.ui.interfaces.ImagesInterface;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.databinding.ItemImagesBinding;
+import com.example.note_coders_android.ui.interfaces.ImagesInterface;
 
 public class ImagesAdapter extends RecyclerView.Adapter<ImagesAdapter.ImagesViewHolder> {
 

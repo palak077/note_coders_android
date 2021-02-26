@@ -10,10 +10,10 @@ import androidx.lifecycle.MutableLiveData;
 
 import java.util.List;
 
-import note.coders.android.data.entities.Category;
-import note.coders.android.data.entities.Note;
-import note.coders.android.data.repository.CategoryRepository;
-import note.coders.android.data.repository.NoteRepository;
+import com.example.note_coders_android.data.entities.Category;
+import com.example.note_coders_android.data.entities.Note;
+import com.example.note_coders_android.data.repository.CategoryRepository;
+import com.example.note_coders_android.data.repository.NoteRepository;
 
 public class NoteViewModel extends AndroidViewModel {
     /// ViewModel for observing data and realtime update to UI

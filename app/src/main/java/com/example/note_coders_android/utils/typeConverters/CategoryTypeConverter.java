@@ -4,7 +4,7 @@ import androidx.room.TypeConverter;
 
 import com.google.gson.Gson;
 
-import note.coders.android.data.entities.Category;
+import com.example.note_coders_android.data.entities.Category;
 
 public class CategoryTypeConverter {
 

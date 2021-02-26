@@ -20,15 +20,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import note.coders.android.R;
-import note.coders.android.data.entities.Note;
-import note.coders.android.databinding.FragmentHomeBinding;
-import note.coders.android.ui.activities.MainActivity;
-import note.coders.android.ui.adapters.CategoryAdapter;
-import note.coders.android.ui.base.BaseFragment;
-import note.coders.android.ui.interfaces.CategoryInterface;
-import note.coders.android.ui.viewModels.NoteViewModel;
-import note.coders.android.utils.Utils;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.data.entities.Note;
+import com.example.note_coders_android.databinding.FragmentHomeBinding;
+import com.example.note_coders_android.ui.activities.MainActivity;
+import com.example.note_coders_android.ui.adapters.CategoryAdapter;
+import com.example.note_coders_android.ui.base.BaseFragment;
+import com.example.note_coders_android.ui.interfaces.CategoryInterface;
+import com.example.note_coders_android.ui.viewModels.NoteViewModel;
+import com.example.note_coders_android.utils.Utils;
 
 public class HomeFragment extends BaseFragment<FragmentHomeBinding, NoteViewModel> implements CategoryInterface, SearchView.OnQueryTextListener {
 

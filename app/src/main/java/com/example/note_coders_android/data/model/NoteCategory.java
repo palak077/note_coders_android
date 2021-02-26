@@ -3,7 +3,7 @@ package com.example.note_coders_android.data.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import note.coders.android.data.entities.Note;
+import com.example.note_coders_android.data.entities.Note;
 
 public class NoteCategory {
 

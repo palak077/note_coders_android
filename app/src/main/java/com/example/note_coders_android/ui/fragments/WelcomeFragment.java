@@ -3,10 +3,10 @@ package com.example.note_coders_android.ui.fragments;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import note.coders.android.R;
-import note.coders.android.databinding.FragmentWelcomeBinding;
-import note.coders.android.ui.base.BaseFragment;
-import note.coders.android.ui.viewModels.NoteViewModel;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.databinding.FragmentWelcomeBinding;
+import com.example.note_coders_android.ui.base.BaseFragment;
+import com.example.note_coders_android.ui.viewModels.NoteViewModel;
 
 public class WelcomeFragment extends BaseFragment<FragmentWelcomeBinding, NoteViewModel> {
 

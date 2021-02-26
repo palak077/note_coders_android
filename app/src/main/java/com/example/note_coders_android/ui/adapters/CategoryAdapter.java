@@ -14,9 +14,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
-import note.coders.android.data.entities.Note;
-import note.coders.android.databinding.ItemCategoryBinding;
-import note.coders.android.ui.interfaces.CategoryInterface;
+import com.example.note_coders_android.data.entities.Note;
+import com.example.note_coders_android.databinding.ItemCategoryBinding;
+import com.example.note_coders_android.ui.interfaces.CategoryInterface;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder> {
 

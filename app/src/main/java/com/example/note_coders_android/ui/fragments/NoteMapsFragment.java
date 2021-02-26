@@ -21,11 +21,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
-import note.coders.android.R;
-import note.coders.android.data.entities.Note;
-import note.coders.android.databinding.FragmentNoteMapsBinding;
-import note.coders.android.ui.base.BaseFragment;
-import note.coders.android.ui.viewModels.NoteViewModel;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.data.entities.Note;
+import com.example.note_coders_android.databinding.FragmentNoteMapsBinding;
+import com.example.note_coders_android.ui.base.BaseFragment;
+import com.example.note_coders_android.ui.viewModels.NoteViewModel;
 
 public class NoteMapsFragment extends BaseFragment<FragmentNoteMapsBinding, NoteViewModel> {
 

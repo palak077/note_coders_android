@@ -21,13 +21,13 @@ import androidx.navigation.ui.NavigationUI;
 
 import java.util.Objects;
 
-import note.coders.android.R;
-import note.coders.android.databinding.ActivityMainBinding;
-import note.coders.android.databinding.ToolbarLayoutBinding;
-import note.coders.android.ui.base.BaseActivity;
-import note.coders.android.ui.interfaces.AlertDialogCallback;
-import note.coders.android.ui.viewModels.NoteViewModel;
-import note.coders.android.utils.Utils;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.databinding.ActivityMainBinding;
+import com.example.note_coders_android.databinding.ToolbarLayoutBinding;
+import com.example.note_coders_android.ui.base.BaseActivity;
+import com.example.note_coders_android.ui.interfaces.AlertDialogCallback;
+import com.example.note_coders_android.ui.viewModels.NoteViewModel;
+import com.example.note_coders_android.utils.Utils;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding, NoteViewModel> implements AlertDialogCallback {
 

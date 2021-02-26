@@ -15,10 +15,10 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import java.util.ArrayList;
 import java.util.List;
 
-import note.coders.android.R;
-import note.coders.android.data.entities.Note;
-import note.coders.android.databinding.ItemNoteBinding;
-import note.coders.android.ui.interfaces.CategoryInterface;
+import com.example.note_coders_android.R;
+import com.example.note_coders_android.data.entities.Note;
+import com.example.note_coders_android.databinding.ItemNoteBinding;
+import com.example.note_coders_android.ui.interfaces.CategoryInterface;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder> {
 

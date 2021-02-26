@@ -11,7 +11,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
 
-import note.coders.android.R;
+import com.example.note_coders_android.R;
 
 public abstract class BaseActivity<viewBinding extends ViewBinding, viewModel extends ViewModel> extends AppCompatActivity {
 
