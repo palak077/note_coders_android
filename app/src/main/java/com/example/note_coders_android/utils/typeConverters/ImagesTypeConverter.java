@@ -12,12 +12,12 @@ public class ImagesTypeConverter {
 
     @TypeConverter
     public static ArrayList<String> fromString(String value)
-//    {
-//        Type listType = new TypeToken<ArrayList<String>>()
-//        {
-//        }.getType();
-//        return new Gson().fromJson(value, listType);
-//    }
+    {
+        Type listType = new TypeToken<ArrayList<String>>()
+        {
+        }.getType();
+        return new Gson().fromJson(value, listType);
+    }
 
     @TypeConverter
     public static String fromArrayList(ArrayList<String> list) {
