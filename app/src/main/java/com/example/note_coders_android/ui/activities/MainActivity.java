@@ -111,16 +111,16 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, NoteViewMode
         });
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        super.onOptionsItemSelected(item);
-//        if (item.getItemId() == android.R.id.home) {
-//            onBackPressed();
-//        } else {
-//            return super.onOptionsItemSelected(item);
-//        }
-//        return true;
-//    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+        } else {
+            return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
 
     @Override
     public void onBackPressed() {
