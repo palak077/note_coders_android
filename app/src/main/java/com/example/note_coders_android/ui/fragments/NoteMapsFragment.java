@@ -127,8 +127,8 @@ public class NoteMapsFragment extends BaseFragment<FragmentNoteMapsBinding, Note
                     addressesLine.add(addresses.get(0).getAddressLine(i));
                 }
 
-//                address = TextUtils.join(Objects.requireNonNull(System.getProperty("line.separator")), addressesLine);
-//                return address;
+                address = TextUtils.join(Objects.requireNonNull(System.getProperty("line.separator")), addressesLine);
+                return address;
 
             } catch (IOException e) {
                 e.printStackTrace();
