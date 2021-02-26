@@ -83,19 +83,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/location_text" />
 
-    <EditText
-        android:id="@+id/edit_text_description"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_below="@id/edit_text_title"
-        android:layout_marginBottom="16dp"
-        android:hint="@string/write_your_note_here"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/image_view_optional_photo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_title" />
-
     <ImageView
         android:id="@+id/image_view_optional_photo"
         android:layout_width="0dp"
