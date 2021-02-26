@@ -89,14 +89,14 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, UserView
             if (binding.passwordEt.getEditText().getText().toString().equals(binding.confirmPasswordEt.getEditText().getText().toString())) {
                 binding.confirmPasswordEt.setErrorEnabled(false);
 
-//                Executor executor = Executors.newSingleThreadExecutor();
-//
-//                executor.execute(() -> {
-//                    User user = new User();
-//                    user.setName(binding.nameEt.getEditText().getText().toString().trim());
-//                    user.setEmail(binding.emailEt.getEditText().getText().toString().trim());
-//                    user.setPassword(binding.passwordEt.getEditText().getText().toString().trim());
-//                    viewModel.signUp(user);
+                Executor executor = Executors.newSingleThreadExecutor();
+
+                executor.execute(() -> {
+                    User user = new User();
+                    user.setName(binding.nameEt.getEditText().getText().toString().trim());
+                    user.setEmail(binding.emailEt.getEditText().getText().toString().trim());
+                    user.setPassword(binding.passwordEt.getEditText().getText().toString().trim());
+                    viewModel.signUp(user);
 //                    /// TODO: Sign Up Process here:: Inserting user data in Room Database
 //
 //                    User user1 = viewModel.findByEmail(binding.emailEt.getEditText().getText().toString().trim());
