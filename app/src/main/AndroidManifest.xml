@@ -27,7 +27,6 @@
         <activity android:name=".UpdateNotesActivity" />
         <activity android:name=".AddNotesActivity" />
         <activity android:name=".AudioActivity" />
-        <activity android:name=".MapsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
