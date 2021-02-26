@@ -71,17 +71,17 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding, NoteViewMode
                 categoryAdapter.enableDateSorting();
                 break;
 
-            case R.id.sign_out:
-                /// TODO: Here we make "login_user" value "false" so it means user is not logged in
-                SharedPreferences sharedPref = requireActivity().getSharedPreferences("app", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPref.edit();
-                editor.putBoolean("login_user", false);
-                editor.commit();
-
-                Intent intent = new Intent(requireActivity(), MainActivity.class);
-                startActivity(intent);
-                requireActivity().finish();
-                break;
+//            case R.id.sign_out:
+//                /// TODO: Here we make "login_user" value "false" so it means user is not logged in
+//                SharedPreferences sharedPref = requireActivity().getSharedPreferences("app", Context.MODE_PRIVATE);
+//                SharedPreferences.Editor editor = sharedPref.edit();
+//                editor.putBoolean("login_user", false);
+//                editor.commit();
+//
+//                Intent intent = new Intent(requireActivity(), MainActivity.class);
+//                startActivity(intent);
+//                requireActivity().finish();
+//                break;
 
             default:
                 return super.onOptionsItemSelected(item);
