@@ -96,12 +96,12 @@ public class SignUpFragment extends BaseFragment<FragmentSignUpBinding, UserView
                     viewModel.signUp(user);
 //                    /// TODO: Sign Up Process here:: Inserting user data in Room Database
 //
-////                    User user1 = viewModel.findByEmail(binding.emailEt.getEditText().getText().toString().trim());
-//
-//                    SharedPreferences sharedPref = requireActivity().getSharedPreferences("app", Context.MODE_PRIVATE);
-//                    SharedPreferences.Editor editor = sharedPref.edit();
-//                    editor.putBoolean("login_user", true);
-//                    editor.commit();
+//                    User user1 = viewModel.findByEmail(binding.emailEt.getEditText().getText().toString().trim());
+
+                    SharedPreferences sharedPref = requireActivity().getSharedPreferences("app", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPref.edit();
+                    editor.putBoolean("login_user", true);
+                    editor.commit();
                     /// TODO: Saving "true" that user is currently logged in
 
 
