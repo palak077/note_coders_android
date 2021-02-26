@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="@string/share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/attach_file"
+        android:icon="@drawable/ic_attach_file"
+        android:title="@string/attach_file"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/delete_note"
+        android:icon="@drawable/ic_delete"
+        android:title="Delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/save_note"
+        android:icon="@drawable/ic_save"
+        android:title="@string/save"
+        app:showAsAction="always" />
+
+</menu>

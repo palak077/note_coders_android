@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_all_notes"
+        android:icon="@drawable/ic_note"
+        android:title="@string/all_notes" />
+
+    <item
+        android:id="@+id/navigation_notes_on_map"
+        android:icon="@drawable/ic_location"
+        android:title="@string/notes_on_map" />
+
+</menu>
